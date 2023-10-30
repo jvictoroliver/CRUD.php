@@ -1,0 +1,98 @@
+body {
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .login-container {
+    max-width: 400px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+  }
+
+  .login-container:hover {
+    transform: translateY(-10px);
+  }
+
+  .form-group {
+    margin-bottom: 30px;
+  }
+
+  .btn-primary {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: #007bff;
+    border: none;
+    transition: all 0.3s ease;
+  }
+
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+
+  .create-account {
+    font-size: 14px;
+  }
+
+  .create-account a {
+    color: #007bff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .create-account a:hover {
+    color: #0056b3;
+  }
+  .cadastro-container {
+    max-width: 400px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+.cadastro-container h2 {
+    margin-bottom: 30px;
+    color: #007bff;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    padding: 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: #007bff;
+    border: none;
+    width: 100%;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.login-link {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.login-link a {
+    color: #007bff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.login-link a:hover {
+    color: #0056b3;
+}
