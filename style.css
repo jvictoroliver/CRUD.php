@@ -17,9 +17,6 @@ body {
     transition: all 0.3s ease;
   }
 
-  .login-container:hover {
-    transform: translateY(-10px);
-  }
 
   .form-group {
     margin-bottom: 30px;
