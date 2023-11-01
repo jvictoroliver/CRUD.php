@@ -7,16 +7,12 @@
     <title>Cadastro</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    <style>
-
-    </style>
-</head> 
+</head>
 
 <body>
-    <form action="?page=cadastrosalvar" method="POST">
     <div class="cadastro-container">
         <h2>Cadastro</h2>
-        <form>
+        <form action="cadastro-salvar.php" method="POST">
             <div class="form-group">
                 <label for="nome">Nome</label>
                 <input type="text" class="form-control" id="nome" name="cadastro_nome" placeholder="Digite seu nome" required>
@@ -39,8 +35,7 @@
             </div>
             <div class="form-group">
                 <label for="confirmar-senha">Confirmar Senha</label>
-                <input type="password" class="form-control" id="confirmar-senha" name="cadastro_senha" placeholder="Confirme sua senha"
-                    required>
+                <input type="password" class="form-control" id="confirmar-senha" name="cadastro_confirmar_senha" placeholder="Confirme sua senha" required>
             </div>
             <div class="form-group">
                 <label for="data-nascimento">Data de Nascimento</label>
@@ -50,10 +45,6 @@
         </form>
         <div class="login-link mt-3">Já possui uma conta? <a href="index.php">Clique aqui!</a></div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    </form>
 </body>
 
 </html>
-
-

@@ -1,13 +1,20 @@
+<?php
+session_start();
+if (!isset($_SESSION['username'])) {
+    // Usuário não autenticado, redirecione para a página de login
+    header("Location: index.php");
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema Escolar</title>
+    <title>Sistema Escolar - Página Inicial</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
@@ -21,7 +28,7 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="home.html">Início</a>
+                        <a class="nav-link" href="home.php">Início</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="alunosDropdown" role="button"
@@ -43,20 +50,14 @@
                             <li><a class="dropdown-item" href="#">Horário das Aulas</a></li>
                         </ul>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="logout.php">Sair</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-<?php
-      include("config.php");
-      switch(@$_REQUEST['page']){
-        case "cadastrosalvar":
-          include("cadastro-salvar.php");
-          break;
-              default:            
-              print "<h1>Seja Bem Vindo!</h1>";
-          }
-          ?>
+
 </html>
